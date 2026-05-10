@@ -1,0 +1,1965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="title" content="Singhaniya CSC Centre | Aadhaar, PAN Card, Passport & Online Services Delhi">
+<meta name="description" content="Singhaniya CSC Centre provides Aadhaar services, PAN card services, passport assistance, insurance, banking, bill payments, mobile recharge and online government services in Delhi.">
+<meta name="keywords" content="
+CSC Centre Delhi,
+Aadhaar Services Delhi,
+PAN Card Services Delhi,
+Passport Services Delhi,
+Online Government Services,
+Bill Payment Services,
+Insurance Services,
+Mobile Recharge,
+Banking Services,
+Delhi CSC Centre,
+Aadhaar Update,
+PAN Correction,
+Passport Assistance,
+Digital Service Centre
+">
+
+<meta name="author" content="Singhaniya CSC Centre">
+
+<meta name="robots" content="index, follow">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta charset="UTF-8">
+
+<!-- ========================= -->
+<!-- OPEN GRAPH SEO -->
+<!-- ========================= -->
+
+<meta property="og:type" content="website">
+
+<meta property="og:title" content="Singhaniya CSC Centre">
+
+<meta property="og:description" content="Professional CSC and Online Government Services in Delhi.">
+
+<meta property="og:image" content="YOUR-LOGO-OR-IMAGE-LINK">
+
+<meta property="og:url" content="YOUR-WEBSITE-LINK">
+
+<meta property="og:site_name" content="Singhaniya CSC Centre">
+
+<!-- ========================= -->
+<!-- TWITTER SEO -->
+<!-- ========================= -->
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="twitter:title" content="Singhaniya CSC Centre">
+
+<meta name="twitter:description" content="Professional Aadhaar, PAN Card, Passport and Government Services in Delhi.">
+
+<meta name="twitter:image" content="YOUR-LOGO-OR-IMAGE-LINK">
+
+<!-- ========================= -->
+<!-- LOCAL BUSINESS SEO -->
+<!-- ========================= -->
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"LocalBusiness",
+"name":"Singhaniya CSC Centre",
+"image":"YOUR-LOGO-OR-IMAGE-LINK",
+"address":{
+"@type":"PostalAddress",
+"streetAddress":"Rakhi Market Zakhira Ramdev Mandir ke Pass",
+"addressLocality":"Delhi",
+"postalCode":"110015",
+"addressCountry":"IN"
+},
+"telephone":"+91 7217653364",
+"url":"YOUR-WEBSITE-LINK",
+"priceRange":"₹₹",
+"description":"Professional CSC Centre providing Aadhaar, PAN Card, Passport, Banking and Government Services."
+}
+
+const servicesDropdown = document.getElementById('servicesDropdown');
+
+if (servicesDropdown) {
+  const toggle = servicesDropdown.querySelector('.dropdown-toggle');
+
+  toggle.addEventListener('click', function(e) {
+    if (window.innerWidth <= 992) {
+      e.preventDefault();
+      servicesDropdown.classList.toggle('active');
+    }
+  });
+
+  
+  const submenuToggles = servicesDropdown.querySelectorAll('.submenu-toggle');
+
+  submenuToggles.forEach(toggle => {
+    toggle.addEventListener('click', function(e) {
+      if (window.innerWidth <= 992) {
+        e.preventDefault();
+        this.parentElement.classList.toggle('active');
+      }
+    });
+  });
+
+
+  document.addEventListener('click', function(e) {
+    if (!servicesDropdown.contains(e.target)) {
+      servicesDropdown.classList.remove('active');
+    }
+  });
+}
+
+
+const heroSlider = document.getElementById('heroSlider');
+
+if (heroSlider) {
+  const slides = heroSlider.querySelectorAll('.hero-slide');
+  const dots = heroSlider.querySelectorAll('.slider-dot');
+  let currentSlide = 0;
+
+  setInterval(() => {
+    slides[currentSlide].classList.remove('active');
+    dots[currentSlide].classList.remove('active');
+
+    currentSlide = (currentSlide + 1) % slides.length;
+
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+  }, 3000);
+}
+
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Singhaniya CSC Centre</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* ========================= */
+/* PREMIUM NOTICE BAR */
+/* ========================= */
+
+.updates-section{
+padding:18px 8%;
+background:linear-gradient(135deg,#071739,#0f2d67);
+overflow:hidden;
+position:relative;
+}
+
+.updates-container{
+display:flex;
+align-items:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.updates-badge{
+background:linear-gradient(135deg,#00c2ff,#0066ff);
+padding:14px 26px;
+border-radius:50px;
+box-shadow:0 10px 30px rgba(0,194,255,0.35);
+animation:floatAnimation 3s ease-in-out infinite;
+}
+
+.updates-badge span{
+color:white;
+font-weight:700;
+font-size:15px;
+letter-spacing:1px;
+}
+
+.updates-marquee{
+flex:1;
+overflow:hidden;
+position:relative;
+}
+
+.updates-track{
+display:flex;
+gap:60px;
+width:max-content;
+animation:scrollUpdates 25s linear infinite;
+}
+
+.updates-track span{
+color:white;
+font-size:17px;
+font-weight:600;
+white-space:nowrap;
+}
+
+@keyframes scrollUpdates{
+
+0%{
+transform:translateX(100%);
+}
+
+100%{
+transform:translateX(-100%);
+}
+
+}
+
+.updates-section::before{
+content:'';
+position:absolute;
+top:0;
+left:-100px;
+width:200px;
+height:100%;
+background:rgba(255,255,255,0.08);
+transform:skewX(-25deg);
+animation:shineMove 5s linear infinite;
+}
+
+@keyframes shineMove{
+
+0%{
+left:-200px;
+}
+
+100%{
+left:120%;
+}
+
+}
+
+@media(max-width:768px){
+
+.updates-container{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.updates-track span{
+font-size:14px;
+}
+
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f7fb;
+animation:fadeBody 1s ease;
+color:#111;
+overflow-x:hidden;
+}
+
+:root{
+--primary:#071739;
+--secondary:#0f2d67;
+--accent:#00c2ff;
+--white:#ffffff;
+--shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(255,255,255,0.95);
+backdrop-filter:blur(10px);
+z-index:1000;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+}
+
+.logo{
+font-size:28px;
+font-weight:800;
+color:var(--primary);
+}
+
+.logo span{
+color:var(--accent);
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+align-items:center;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#111;
+font-weight:600;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:var(--accent);
+}
+
+.whatsapp-btn{
+padding:12px 22px;
+background:#25d366;
+color:white !important;
+border-radius:50px;
+box-shadow:0 10px 25px rgba(37,211,102,0.35);
+border-radius:50px;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:140px 8% 80px;
+background:linear-gradient(135deg,#071739,#0f2d67);
+color:white;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.hero-left{
+flex:1;
+min-width:300px;
+}
+
+.hero-left h1{
+font-size:65px;
+line-height:1.2;
+margin-bottom:25px;
+}
+
+.hero-left p{
+font-size:18px;
+line-height:1.9;
+margin-bottom:35px;
+color:#d7e4ff;
+}
+
+.hero-buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:15px 30px;
+border:none;
+border-radius:50px;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+text-decoration:none;
+display:inline-block;
+}
+
+.btn-primary{
+background:var(--accent);
+color:white;
+}
+
+.btn-secondary{
+background:white;
+color:var(--primary);
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+.hero-right{
+flex:1;
+min-width:300px;
+background:rgba(255,255,255,0.1);
+padding:40px;
+border-radius:30px;
+backdrop-filter:blur(12px);
+box-shadow:0 15px 50px rgba(0,0,0,0.3);
+}
+
+.hero-right h2{
+font-size:32px;
+margin-bottom:25px;
+}
+
+.hero-right ul{
+list-style:none;
+}
+
+.hero-right ul li{
+margin-bottom:18px;
+font-size:17px;
+}
+
+.hero-right ul li::before{
+content:'✔ ';
+color:var(--accent);
+font-weight:bold;
+}
+
+section{
+padding:100px 8%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-size:42px;
+color:var(--primary);
+margin-bottom:15px;
+}
+
+.section-title p{
+max-width:700px;
+margin:auto;
+line-height:1.8;
+color:#555;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:-60px;
+padding:0 8%;
+position:relative;
+z-index:10;
+}
+
+.feature-card{
+background:white;
+padding:35px;
+border-radius:25px;
+box-shadow:var(--shadow);
+text-align:center;
+transition:0.3s;
+}
+
+.feature-card:hover{
+transform:translateY(-10px);
+}
+
+.feature-card h3{
+margin:15px 0;
+color:var(--primary);
+}
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.service-card{
+background:white;
+border-radius:30px;
+overflow:hidden;
+box-shadow:var(--shadow);
+transition:0.4s;
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+}
+
+.service-top{
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+color:white;
+padding:30px;
+}
+
+.service-top h3{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.service-bottom{
+padding:30px;
+}
+
+.service-bottom ul{
+list-style:none;
+margin-bottom:25px;
+}
+
+.service-bottom ul li{
+margin-bottom:12px;
+color:#555;
+}
+
+.apply-btn{
+display:inline-block;
+padding:12px 24px;
+background:var(--accent);
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+}
+
+.about{
+background:white;
+}
+
+.about-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:50px;
+align-items:center;
+}
+
+.about-box{
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+color:white;
+padding:50px;
+border-radius:30px;
+box-shadow:var(--shadow);
+}
+
+.about-box h3{
+font-size:36px;
+margin-bottom:25px;
+}
+
+.about-box p{
+line-height:2;
+color:#d9e6ff;
+}
+
+.points{
+display:grid;
+gap:25px;
+}
+
+.point{
+background:#f6f8ff;
+padding:30px;
+border-radius:25px;
+border-left:5px solid var(--accent);
+}
+
+.point h4{
+margin-bottom:10px;
+color:var(--primary);
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:40px;
+}
+
+.contact-box,
+.form-box{
+background:white;
+padding:40px;
+border-radius:30px;
+box-shadow:var(--shadow);
+}
+
+.contact-box h3,
+.form-box h3{
+font-size:32px;
+margin-bottom:25px;
+color:var(--primary);
+}
+
+.info{
+margin-bottom:25px;
+}
+
+.info h4{
+margin-bottom:8px;
+color:var(--primary);
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+input,
+textarea,
+select{
+padding:16px;
+border-radius:14px;
+border:1px solid #ddd;
+outline:none;
+font-size:15px;
+}
+
+textarea{
+min-height:120px;
+resize:none;
+}
+
+.upload-label{
+font-weight:600;
+color:var(--primary);
+margin-top:5px;
+display:block;
+}
+
+#documentUpload{
+padding:14px;
+background:#f5f7ff;
+border:2px dashed var(--accent);
+border-radius:14px;
+cursor:pointer;
+width:100%;
+}
+
+.submit-btn{
+padding:16px;
+border:none;
+border-radius:50px;
+background:var(--primary);
+color:white;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+.submit-btn:hover{
+background:var(--accent);
+}
+
+/* ========================= */
+/* NOTIFICATION POPUP */
+/* ========================= */
+
+.notification-popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:5000;
+animation:fadeBody 0.5s ease;
+}
+
+.popup-glow{
+position:absolute;
+width:180px;
+height:180px;
+background:rgba(0,194,255,0.15);
+filter:blur(50px);
+border-radius:50%;
+top:-40px;
+right:-30px;
+z-index:0;
+}
+
+.popup-box{
+position:relative;
+overflow:hidden;
+width:90%;
+max-width:420px;
+background:white;
+padding:40px 30px;
+border-radius:30px;
+text-align:center;
+box-shadow:0 20px 60px rgba(0,0,0,0.3);
+animation:slideUp 0.7s ease;
+}
+
+.popup-tag{
+display:inline-block;
+padding:8px 18px;
+background:rgba(0,194,255,0.12);
+color:var(--accent);
+font-size:13px;
+font-weight:700;
+letter-spacing:1px;
+border-radius:50px;
+margin-bottom:18px;
+}
+
+.popup-icon{
+position:relative;
+z-index:2;
+color:var(--accent);
+animation:floatAnimation 2.5s ease-in-out infinite;
+margin-bottom:20px;
+}
+
+.popup-box h2{
+position:relative;
+z-index:2;
+font-size:34px;
+color:var(--primary);
+margin-bottom:15px;
+}
+
+.popup-box p{
+position:relative;
+z-index:2;
+line-height:1.8;
+color:#555;
+margin-bottom:30px;
+}
+
+.popup-buttons{
+position:relative;
+z-index:2;
+display:flex;
+gap:15px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.popup-buttons button{
+padding:14px 28px;
+border:none;
+border-radius:50px;
+font-size:15px;
+font-weight:600;
+cursor:pointer;
+transition:0.4s;
+}
+
+#allowBtn{
+background:linear-gradient(135deg,var(--accent),#0066ff);
+background:var(--primary);
+color:white;
+}
+
+#laterBtn{
+background:#e9eefc;
+color:var(--primary);
+}
+
+.popup-buttons button:hover{
+transform:translateY(-4px) scale(1.05);
+}
+
+
+
+
+/* ========================= */
+/* SERVICES DROPDOWN MENU */
+/* ========================= */
+.dropdown{
+  position:relative;
+}
+
+.dropdown-toggle{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  cursor:pointer;
+}
+
+.dropdown-toggle::after{
+  content:'▾';
+  font-size:12px;
+  transition:transform .25s ease;
+}
+
+.dropdown:hover .dropdown-toggle::after,
+.dropdown.active .dropdown-toggle::after{
+  transform:rotate(180deg);
+}
+
+/* Disable old nav underline effect only for Services */
+.dropdown .dropdown-toggle::before,
+.dropdown .dropdown-toggle::marker{
+  display:none !important;
+}
+
+.dropdown .dropdown-toggle{
+  position:relative;
+}
+
+.dropdown .dropdown-toggle::after{
+  text-decoration:none;
+}
+
+.dropdown-menu,
+.submenu-menu{
+  list-style:none;
+}
+
+.dropdown-menu{
+  position:absolute;
+  top:calc(100% + 14px);
+  left:50%;
+  transform:translateX(-50%) translateY(12px) scale(.98);
+  min-width:290px;
+  background:rgba(255,255,255,.98);
+  backdrop-filter:blur(14px);
+  border:1px solid rgba(0,0,0,.06);
+  border-radius:20px;
+  box-shadow:0 25px 60px rgba(7,23,57,.18);
+  padding:10px 0;
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transition:opacity .28s ease, transform .28s ease, visibility .28s ease;
+  z-index:1001;
+}
+
+.dropdown-menu::before{
+  content:'';
+  position:absolute;
+  top:-8px;
+  left:50%;
+  width:16px;
+  height:16px;
+  background:#fff;
+  border-left:1px solid rgba(0,0,0,.06);
+  border-top:1px solid rgba(0,0,0,.06);
+  transform:translateX(-50%) rotate(45deg);
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown.active .dropdown-menu{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+  transform:translateX(-50%) translateY(0) scale(1);
+}
+
+.dropdown-menu a,
+.submenu-toggle{
+  display:flex !important;
+  justify-content:space-between;
+  align-items:center;
+  padding:13px 22px;
+  color:var(--primary);
+  font-weight:600;
+  text-decoration:none;
+  transition:background .25s ease, color .25s ease, transform .25s ease;
+}
+
+.dropdown-menu a:hover,
+.submenu-toggle:hover{
+  background:linear-gradient(90deg, rgba(0,194,255,.08), transparent);
+  color:var(--accent);
+  transform:translateX(4px);
+}
+
+.dropdown-submenu{
+  position:relative;
+}
+
+.submenu-toggle::after{
+  content:'›';
+  font-size:16px;
+  transition:transform .25s ease;
+}
+
+.dropdown-submenu:hover .submenu-toggle::after,
+.dropdown-submenu.active .submenu-toggle::after{
+  transform:translateX(3px);
+}
+
+.submenu-menu{
+  position:absolute;
+  top:0;
+  left:calc(100% + 10px);
+  min-width:250px;
+  background:#fff;
+  border:1px solid rgba(0,0,0,.06);
+  border-radius:18px;
+  box-shadow:0 20px 50px rgba(7,23,57,.16);
+  padding:8px 0;
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transform:translateY(8px);
+  transition:opacity .25s ease, transform .25s ease, visibility .25s ease;
+  z-index:1002;
+}
+
+.dropdown-submenu:hover .submenu-menu,
+.dropdown-submenu.active .submenu-menu{
+  opacity:1;
+  visibility:visible;
+  pointer-events:auto;
+  transform:translateY(0);
+}
+
+@media(max-width:992px){
+  .dropdown-menu{
+    position:static;
+    left:auto;
+    top:auto;
+    min-width:100%;
+    margin-top:10px;
+    transform:none !important;
+    display:none;
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+    border:1px solid #e5e7eb;
+    box-shadow:none;
+    backdrop-filter:none;
+  }
+
+  .dropdown-menu::before{
+    display:none;
+  }
+
+  .dropdown.active .dropdown-menu{
+    display:block;
+  }
+
+  .submenu-menu{
+    position:static;
+    min-width:100%;
+    display:none;
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+    transform:none !important;
+    box-shadow:none;
+    border:none;
+    padding:4px 0 4px 14px;
+  }
+
+  .dropdown-submenu.active .submenu-menu{
+    display:block;
+  }
+}
+footer{
+background:#051122;
+color:white;
+padding:80px 8% 30px;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:2fr 1fr 1fr 1fr 1.25fr;
+gap:30px;
+margin-bottom:40px;
+align-items:start;
+}
+
+.footer-box h3{
+margin-bottom:20px;
+color:var(--accent);
+}
+
+.footer-box p,
+.footer-box a{
+line-height:2;
+color:#d2d9ea;
+text-decoration:none;
+display:block;
+}
+
+
+.footer-qr{
+text-align:center;
+}
+
+.footer-qr h3{
+margin-bottom:20px;
+color:var(--accent);
+}
+
+.qr-card{
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(255,255,255,0.08);
+border-radius:24px;
+padding:20px;
+display:inline-block;
+backdrop-filter:blur(10px);
+}
+
+.qr-card img{
+width:180px;
+height:180px;
+display:block;
+margin:0 auto 15px;
+border-radius:16px;
+background:#fff;
+padding:10px;
+}
+
+.qr-card p{
+color:#d2d9ea;
+font-size:14px;
+line-height:1.7;
+margin:0;
+}
+
+.qr-note{
+margin-top:10px;
+font-size:13px;
+color:#9fb4da;
+}
+
+
+@media(max-width:1200px){
+.footer-grid{
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+}
+}
+
+.footer-qr{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:flex-start;
+}
+
+.qr-card{
+width:100%;
+max-width:220px;
+}
+
+.qr-card img{
+width:170px;
+height:170px;
+}
+
+.copyright{
+text-align:center;
+padding-top:25px;
+border-top:1px solid rgba(255,255,255,0.1);
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+width:65px;
+height:65px;
+background:#25d366;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+color:white;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+z-index:1000;
+}
+
+@media(max-width:992px){
+.hero{
+text-align:center;
+}
+
+.hero-left h1{
+font-size:48px;
+}
+
+nav{
+flex-direction:column;
+gap:20px;
+}
+
+.nav-links{
+flex-wrap:wrap;
+justify-content:center;
+}
+}
+
+@keyframes fadeBody{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes floatAnimation{
+0%{
+transform:translateY(0px);
+}
+50%{
+transform:translateY(-12px);
+}
+100%{
+transform:translateY(0px);
+}
+}
+
+@keyframes slideUp{
+from{
+opacity:0;
+transform:translateY(80px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.hero-right{
+animation:floatAnimation 4s ease-in-out infinite;
+}
+
+.feature-card,
+.service-card,
+.point,
+.contact-box,
+.form-box{
+animation:slideUp 1s ease;
+transition:0.4s;
+}
+
+.feature-card:hover,
+.service-card:hover,
+.point:hover,
+.contact-box:hover,
+.form-box:hover{
+transform:translateY(-12px) scale(1.02);
+box-shadow:0 20px 45px rgba(0,0,0,0.15);
+}
+
+.nav-links a{
+position:relative;
+}
+
+.nav-links a::after{
+content:'';
+position:absolute;
+left:0;
+bottom:-5px;
+width:0;
+height:3px;
+background:var(--accent);
+transition:0.4s;
+border-radius:10px;
+}
+
+.nav-links a:hover::after{
+width:100%;
+}
+
+.apply-btn,
+.btn,
+.submit-btn,
+.whatsapp-btn{
+transition:all 0.4s ease;
+}
+
+.apply-btn:hover,
+.btn:hover,
+.submit-btn:hover,
+.whatsapp-btn:hover{
+background:#1ebe5d;
+transform:translateY(-5px) scale(1.05);
+box-shadow:0 12px 30px rgba(37,211,102,0.45);
+}
+
+.whatsapp{
+animation:floatAnimation 2s ease-in-out infinite;
+}
+
+.hero-left h1{
+animation:slideUp 1s ease;
+}
+
+.hero-left p{
+animation:slideUp 1.4s ease;
+}
+
+.hero-buttons{
+animation:slideUp 1.8s ease;
+}
+
+.section-title{
+animation:slideUp 1s ease;
+}
+
+@media(max-width:600px){
+.hero-left h1{
+font-size:38px;
+}
+
+.section-title h2{
+font-size:32px;
+}
+}
+
+
+/* ========================= */
+/* DROPDOWN VISUAL FIX */
+/* ========================= */
+/* Services menu ke neeche line effect hata diya gaya hai */
+.dropdown .dropdown-toggle::before{
+content:none !important;
+}
+
+.dropdown .dropdown-toggle::after{
+border:none;
+}
+
+/* Nav underline pseudo-element ko Services dropdown par disable karein */
+.dropdown .dropdown-toggle::after{
+content:'▼';
+font-size:10px;
+transition:transform 0.3s ease;
+}
+
+.dropdown .dropdown-toggle::before,
+.dropdown .dropdown-toggle::marker{
+display:none !important;
+}
+
+.dropdown .dropdown-toggle.nav-no-underline::after{
+content:'▼';
+}
+
+/* Original nav underline ko Services item par disable */
+.dropdown .dropdown-toggle::after{
+text-decoration:none;
+}
+
+.dropdown .dropdown-toggle{
+position:relative;
+}
+
+.dropdown .dropdown-toggle::before{
+content:none !important;
+}
+
+/* This specifically removes the blue line from the Services item */
+.dropdown .dropdown-toggle::after{
+box-shadow:none;
+}
+
+
+.dropdown .dropdown-toggle::after{
+content:'▼' !important;
+}
+
+.dropdown .dropdown-toggle::before{
+content:none !important;
+}
+
+.dropdown .dropdown-toggle::after{
+border:0 !important;
+}
+
+.dropdown .dropdown-toggle::after{
+box-shadow:none !important;
+}
+
+.dropdown .dropdown-toggle.nav-links a::after{
+display:none !important;
+}
+
+
+/* ========================= */
+/* HERO IMAGE SLIDER */
+/* ========================= */
+.hero-right-content{
+display:grid;
+grid-template-columns:1.1fr 0.9fr;
+gap:24px;
+align-items:stretch;
+}
+
+.hero-slider{
+position:relative;
+min-height:100%;
+border-radius:24px;
+overflow:hidden;
+background:rgba(255,255,255,0.08);
+box-shadow:inset 0 0 0 1px rgba(255,255,255,0.08);
+}
+
+.hero-slide{
+position:absolute;
+inset:0;
+opacity:0;
+transition:opacity 0.8s ease;
+}
+
+.hero-slide.active{
+opacity:1;
+}
+
+.hero-slide img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+.hero-slider::after{
+content:'';
+position:absolute;
+inset:0;
+background:linear-gradient(to top, rgba(7,23,57,0.15), rgba(7,23,57,0.05));
+pointer-events:none;
+}
+
+.slider-dots{
+position:absolute;
+bottom:12px;
+left:50%;
+transform:translateX(-50%);
+display:flex;
+gap:8px;
+z-index:2;
+}
+
+.slider-dot{
+width:8px;
+height:8px;
+border-radius:50%;
+background:rgba(255,255,255,0.4);
+}
+
+.slider-dot.active{
+background:#ffffff;
+width:24px;
+border-radius:999px;
+}
+
+@media(max-width:992px){
+.hero-right-content{
+grid-template-columns:1fr;
+}
+.hero-slider{
+min-height:260px;
+}
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ========================= -->
+
+<!-- NOTIFICATION POPUP -->
+
+<!-- ========================= -->
+
+<div class="notification-popup" id="notificationPopup">
+
+<div class="popup-box">
+
+<div class="popup-glow"></div>
+
+<div class="popup-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+<path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.4-1.4A2 2 0 0 1 18 14.2V11a6 6 0 1 0-12 0v3.2a2 2 0 0 1-.6 1.4L4 17h5m6 0v1a3 3 0 1 1-6 0v-1m6 0H9"/>
+</svg>
+</div>
+
+<span class="popup-tag">SMART ALERT SYSTEM</span>
+
+<h2>Never Miss Important Updates</h2>
+
+<p>
+Get instant alerts for Aadhaar services, PAN updates,
+new government schemes, important announcements,
+and exclusive CSC service updates directly on your device.
+</p>
+
+<div class="popup-buttons">
+<button id="allowBtn">Allow</button>
+<button id="laterBtn">Maybe Later</button>
+</div>
+
+</div>
+
+</div>
+
+<header>
+<nav>
+<div class="logo">Singhaniya <span>CSC</span></div>
+
+<div class="nav-links">
+<a href="#home">Home</a>
+<div class="dropdown" id="servicesDropdown">
+<a href="#services" class="dropdown-toggle" style="position:relative;">Services</a>
+<div class="dropdown-menu">
+<a href="#services">Our Services</a>
+
+<div class="dropdown-submenu">
+<a href="#all-services" class="submenu-toggle">Government Services</a>
+<div class="submenu-menu">
+<a href="#all-services">Aadhaar Services</a>
+<a href="#all-services">PAN Card Services</a>
+<a href="#all-services">Passport Services</a>
+<a href="#all-services">Certificate Services</a>
+</div>
+</div>
+
+<div class="dropdown-submenu">
+<a href="#all-services" class="submenu-toggle">Digital Services</a>
+<div class="submenu-menu">
+<a href="#all-services">Bill Payments</a>
+<a href="#all-services">Mobile Recharge</a>
+<a href="#all-services">Ticket Booking</a>
+<a href="#all-services">Online Form Filling</a>
+</div>
+</div>
+
+<a href="#contact">Service Enquiry</a>
+<a href="https://wa.me/917217653364" target="_blank">WhatsApp Support</a>
+</div>
+</div>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+<a href="https://wa.me/917217653364" class="whatsapp-btn">WhatsApp</a>
+</div>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-left">
+<h1>All Government & Digital Services at One Place</h1>
+
+<p>
+Singhaniya CSC Centre provides Aadhaar, PAN Card, Passport,
+Insurance, Banking, Recharge and Bill Payment services with
+professional support and fast processing.
+</p>
+
+<div class="hero-buttons">
+<a href="#services" class="btn btn-primary">Explore Services</a>
+<a href="https://wa.me/917217653364" class="btn btn-secondary">WhatsApp Support</a>
+</div>
+</div>
+
+<div class="hero-right">
+<div class="hero-right-content">
+<div class="hero-services">
+<h2>Popular Services</h2>
+<ul>
+<li>Aadhaar Enrolment & Update</li>
+<li>PAN Card Services</li>
+<li>Passport Assistance</li>
+<li>Insurance Services</li>
+<li>Bank Account Opening</li>
+<li>Bill Payments</li>
+<li>Mobile Recharge</li>
+<li>Voter ID Services</li>
+</ul>
+</div>
+
+<div class="hero-slider" id="heroSlider">
+<div class="hero-slide active">
+<img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80" alt="Digital government services">
+</div>
+<div class="hero-slide">
+<img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80" alt="Online payment services">
+</div>
+<div class="hero-slide">
+<img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?auto=format&fit=crop&w=800&q=80" alt="Banking and financial services">
+</div>
+<div class="hero-slide">
+<img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=800&q=80" alt="Document processing services">
+</div>
+
+<div class="slider-dots">
+<span class="slider-dot active"></span>
+<span class="slider-dot"></span>
+<span class="slider-dot"></span>
+<span class="slider-dot"></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="features">
+<div class="feature-card">
+<h3>⚡ Fast Processing</h3>
+<p>Quick and trusted service support.</p>
+</div>
+
+<div class="feature-card">
+<h3>🔒 Secure Services</h3>
+<p>Safe handling of all customer documents.</p>
+</div>
+
+<div class="feature-card">
+<h3>💼 Professional Support</h3>
+<p>Reliable assistance for digital services.</p>
+</div>
+
+<div class="feature-card">
+<h3>📱 Mobile Friendly</h3>
+<p>Fully responsive premium modern website.</p>
+</div>
+</div>
+
+<!-- ========================= -->
+<!-- LATEST NOTICE UPDATES -->
+<!-- ========================= -->
+
+<section class="updates-section">
+
+<div class="updates-container">
+
+<div class="updates-badge">
+<span>LIVE UPDATES</span>
+</div>
+
+<div class="updates-marquee">
+
+<div class="updates-track">
+
+<span>🔔 Aadhaar Update Service Available</span>
+
+<span>📢 PAN Card Correction Started</span>
+
+<span>⚡ Fast Passport Assistance Running</span>
+
+<span>🛡 Insurance Services Active</span>
+
+<span>💡 Electricity Bill Payment Available</span>
+
+<span>📱 Mobile Recharge Services Running</span>
+
+<span>🚀 New Government Services Added</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+<div class="section-title">
+<h2>Our Services</h2>
+<p>Professional government and digital services with trusted support.</p>
+</div>
+
+<div class="services-grid">
+
+<div class="service-card">
+<div class="service-top">
+<h3>Aadhaar Services</h3>
+<p>Complete Aadhaar Support</p>
+</div>
+
+<div class="service-bottom">
+<ul>
+<li>New Enrolment</li>
+<li>Aadhaar Update</li>
+<li>Aadhaar Download</li>
+<li>Mobile Linking</li>
+</ul>
+<a href="https://wa.me/917217653364" class="apply-btn">Apply Now</a>
+</div>
+</div>
+
+<div class="service-card">
+<div class="service-top">
+<h3>PAN Card</h3>
+<p>Fast PAN Assistance</p>
+</div>
+
+<div class="service-bottom">
+<ul>
+<li>New PAN Card</li>
+<li>PAN Correction</li>
+<li>Reprint PAN</li>
+<li>Status Check</li>
+</ul>
+<a href="https://wa.me/917217653364" class="apply-btn">Apply Now</a>
+</div>
+</div>
+
+<div class="service-card">
+<div class="service-top">
+<h3>Passport Services</h3>
+<p>Passport Guidance</p>
+</div>
+
+<div class="service-bottom">
+<ul>
+<li>New Passport</li>
+<li>Renewal Help</li>
+<li>Appointment Support</li>
+<li>Document Assistance</li>
+</ul>
+<a href="https://wa.me/917217653364" class="apply-btn">Apply Now</a>
+</div>
+</div>
+
+<div class="service-card">
+<div class="service-top">
+<h3>Insurance Services</h3>
+<p>Secure Insurance Solutions</p>
+</div>
+
+<div class="service-bottom">
+<ul>
+<li>Health Insurance</li>
+<li>Vehicle Insurance</li>
+<li>Life Insurance</li>
+<li>Renewal Services</li>
+</ul>
+<a href="https://wa.me/917217653364" class="apply-btn">Apply Now</a>
+</div>
+</div>
+
+<div class="service-card">
+<div class="service-top">
+<h3>Bill Payments</h3>
+<p>Utility Bill Services</p>
+</div>
+
+<div class="service-bottom">
+<ul>
+<li>Electricity Bill</li>
+<li>Water Bill</li>
+<li>Gas Bill</li>
+<li>Mobile Recharge</li>
+</ul>
+<a href="https://wa.me/917217653364" class="apply-btn">Apply Now</a>
+</div>
+</div>
+
+<div class="service-card">
+<div class="service-top">
+<h3>Banking Services</h3>
+<p>Mini Banking Support</p>
+</div>
+
+<div class="service-bottom">
+<ul>
+<li>Account Opening</li>
+<li>KYC Assistance</li>
+<li>Banking Help</li>
+<li>Financial Guidance</li>
+</ul>
+<a href="https://wa.me/917217653364" class="apply-btn">Apply Now</a>
+</div>
+</div>
+
+<div class="service-card">
+<div class="service-top">
+<h3>More Services</h3>
+<p>Explore All Services</p>
+</div>
+
+<div class="service-bottom">
+<ul>
+<li>Government Services</li>
+<li>Digital Documentation</li>
+<li>Online Applications</li>
+<li>CSC Related Services</li>
+</ul>
+<a href="#all-services" class="apply-btn">More Services</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- ========================= -->
+
+<!-- ALL SERVICES SECTION -->
+
+<!-- ========================= -->
+
+<section id="all-services" class="about">
+<div class="section-title">
+<h2>All Available Services</h2>
+<p>Complete list of services available at Singhaniya CSC Centre.</p>
+</div>
+
+<div class="services-grid">
+
+<div class="service-card">
+<div class="service-top">
+<h3>Government Services</h3>
+</div>
+<div class="service-bottom">
+<ul>
+<li>Aadhaar PVC Card</li>
+<li>Birth Certificate</li>
+<li>Death Certificate</li>
+<li>Income Certificate</li>
+<li>Caste Certificate</li>
+<li>Domicile Certificate</li>
+</ul>
+</div>
+</div>
+
+<div class="service-card">
+<div class="service-top">
+<h3>Banking Services</h3>
+</div>
+<div class="service-bottom">
+<ul>
+<li>Money Transfer</li>
+<li>Mini Statement</li>
+<li>Cash Withdrawal</li>
+<li>AEPS Services</li>
+<li>Account Opening</li>
+<li>KYC Update</li>
+</ul>
+</div>
+</div>
+
+<div class="service-card">
+<div class="service-top">
+<h3>Online Services</h3>
+</div>
+<div class="service-bottom">
+<ul>
+<li>Online Form Filling</li>
+<li>Scholarship Forms</li>
+<li>Job Applications</li>
+<li>Exam Forms</li>
+<li>Railway Ticket Booking</li>
+<li>Flight Ticket Booking</li>
+</ul>
+</div>
+</div>
+
+<div class="service-card">
+<div class="service-top">
+<h3>Digital Services</h3>
+</div>
+<div class="service-bottom">
+<ul>
+<li>Document Printing</li>
+<li>Lamination</li>
+<li>Photocopy</li>
+<li>Passport Photo</li>
+<li>Email Services</li>
+<li>Scanning Services</li>
+</ul>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="about" id="about">
+<div class="section-title">
+<h2>About Us</h2>
+<p>Trusted digital and government service centre in Delhi.</p>
+</div>
+
+<div class="about-container">
+<div class="about-box">
+<h3>Professional Digital Service Centre</h3>
+<p>
+Singhaniya CSC Centre provides secure and professional digital
+services including Aadhaar, PAN Card, Passport, Banking,
+Insurance and Bill Payment support.
+</p>
+</div>
+
+<div class="points">
+<div class="point">
+<h4>Trusted Services</h4>
+<p>Reliable and professional customer support.</p>
+</div>
+
+<div class="point">
+<h4>Secure Documentation</h4>
+<p>Safe handling of customer documents and details.</p>
+</div>
+
+<div class="point">
+<h4>Modern Digital Solutions</h4>
+<p>Fast and customer friendly digital services.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="section-title">
+<h2>Contact Us</h2>
+<p>Connect with Singhaniya CSC Centre for trusted support.</p>
+</div>
+
+<div class="contact-grid">
+<div class="contact-box">
+<h3>Get In Touch</h3>
+
+<div class="info">
+<h4>📍 Address</h4>
+<p>Rakhi Market, Zakhira, Ramdev Mandir ke Pass, Delhi - 110015</p>
+</div>
+
+<div class="info">
+<h4>📞 WhatsApp</h4>
+<p>7217653364</p>
+</div>
+
+<div class="info">
+<h4>⏰ Timing</h4>
+<p>Monday to Saturday : 9 AM - 8 PM</p>
+</div>
+</div>
+
+<div class="form-box">
+<h3>Service Enquiry</h3>
+
+<form id="contactForm">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="tel" id="mobile" placeholder="Mobile Number" required>
+
+<select id="service" required>
+<option value="">Select Service</option>
+<option>Aadhaar Services</option>
+<option>PAN Card</option>
+<option>Passport Services</option>
+<option>Insurance Services</option>
+<option>Bill Payments</option>
+</select>
+
+<textarea id="message" placeholder="Write Your Message"></textarea>
+
+<label class="upload-label">📎 Upload Related Document</label> <input type="file" id="documentUpload" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx">
+
+<button type="submit" class="submit-btn">Send on WhatsApp</button>
+
+</form>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="footer-grid">
+
+<div class="footer-box">
+<h3>Singhaniya CSC Centre</h3>
+<p>
+Trusted digital and government service centre with fast and secure support.
+</p>
+</div>
+
+<div class="footer-box">
+<h3>Quick Links</h3>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+
+<div class="footer-box">
+<h3>Services</h3>
+<a href="#">Aadhaar Services</a>
+<a href="#">PAN Card</a>
+<a href="#">Passport</a>
+<a href="#">Insurance</a>
+</div>
+
+<div class="footer-box">
+<h3>Contact</h3>
+<p>Delhi - 110015</p>
+<p>7217653364</p>
+</div>
+
+<div class="footer-box footer-qr">
+<h3>Scan & Pay</h3>
+<div class="qr-card">
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=upi://pay?pa=demo@upi&pn=Singhaniya%20CSC%20Centre&am=1&cu=INR" alt="UPI QR Code">
+<p>Scan to pay via UPI, PhonePe, Google Pay or Paytm.</p>
+<div class="qr-note">Demo QR for preview — replace with your actual UPI QR.</div>
+</div>
+</div>
+
+</div>
+
+<div class="copyright">
+<p>© 2026 Singhaniya CSC Centre | All Rights Reserved</p>
+</div>
+</footer>
+
+<a href="https://wa.me/917217653364" class="whatsapp">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 24 24">
+<path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.52 0 .18 5.34.18 11.88c0 2.1.54 4.08 1.56 5.88L0 24l6.42-1.68a11.9 11.9 0 0 0 5.64 1.44h.06c6.54 0 11.88-5.34 11.88-11.88 0-3.18-1.26-6.18-3.48-8.4zM12.12 21.6a9.7 9.7 0 0 1-4.92-1.32l-.36-.18-3.78.96 1.02-3.66-.24-.36a9.63 9.63 0 0 1-1.5-5.16c0-5.34 4.38-9.72 9.72-9.72 2.58 0 5.04 1.02 6.84 2.82 1.8 1.8 2.82 4.26 2.82 6.84-.06 5.4-4.44 9.78-9.6 9.78zm5.34-7.26c-.3-.18-1.8-.9-2.1-1.02-.3-.12-.48-.18-.72.18-.18.3-.78 1.02-.96 1.2-.18.18-.36.24-.66.06-.3-.18-1.26-.48-2.4-1.56-.9-.78-1.5-1.8-1.68-2.1-.18-.3 0-.48.12-.66.18-.18.3-.36.48-.54.12-.18.18-.3.3-.48.12-.18.06-.36 0-.54-.06-.18-.72-1.74-.96-2.34-.24-.6-.54-.48-.72-.48h-.6c-.18 0-.48.06-.72.3-.24.24-.96.9-.96 2.16s.96 2.46 1.08 2.64c.18.18 1.92 3 4.68 4.2.66.3 1.2.48 1.62.66.66.18 1.26.18 1.74.12.54-.06 1.8-.72 2.04-1.44.24-.72.24-1.32.18-1.44-.06-.18-.3-.24-.6-.42z"/>
+</svg>
+</a>
+
+<script>
+
+const form = document.getElementById('contactForm');
+
+form.addEventListener('submit', function(e){
+e.preventDefault();
+
+const name = document.getElementById('name').value;
+const mobile = document.getElementById('mobile').value;
+const service = document.getElementById('service').value;
+const message = document.getElementById('message').value;
+const fileInput = document.getElementById('documentUpload');
+const fileName = fileInput.files.length > 0 ? fileInput.files[0].name : 'No Document Attached';
+
+const whatsappMessage = `📩 New Service Enquiry %0A%0A👤 Name: ${name}%0A📞 Mobile: ${mobile}%0A🛠 Selected Service: ${service}%0A💬 Client Message: ${message}%0A📎 Selected Document: ${fileName}%0A%0A⚠ Please attach the selected document manually in WhatsApp before sending.%0A%0A✅ Please Contact This Customer.`;
+
+const whatsappURL = `https://wa.me/917217653364?text=${whatsappMessage}`;
+
+window.open(whatsappURL, '_blank');
+
+alert('Your enquiry is being sent to WhatsApp.');
+
+form.reset();
+});
+
+const popup = document.getElementById('notificationPopup');
+const allowBtn = document.getElementById('allowBtn');
+const laterBtn = document.getElementById('laterBtn');
+
+allowBtn.addEventListener('click', ()=>{
+
+allowBtn.innerHTML = '✓ Notifications Enabled';
+allowBtn.style.background = '#16a34a';
+
+setTimeout(()=>{
+popup.style.display = 'none';
+},1000);
+popup.style.display = 'none';
+});
+
+laterBtn.addEventListener('click', ()=>{
+popup.style.display = 'none';
+});
+
+window.addEventListener('scroll',()=>{
+const header = document.querySelector('header');
+
+if(window.scrollY > 50){
+header.style.background = '#ffffff';
+}else{
+header.style.background = 'rgba(255,255,255,0.95)';
+}
+});
+
+</script>
+
+</body>
+</html>
